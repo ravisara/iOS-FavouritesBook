@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            
+            List {
+                ForEach(favouritesCollection) { favouriteModel in
+                    Section(header: Text(favouriteModel.title).bold()) {
+                        ForEach(favouriteModel.elements) {anElement in
+                            Text(anElement.name)
+                        }
+                    }
+                }
+            }
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
