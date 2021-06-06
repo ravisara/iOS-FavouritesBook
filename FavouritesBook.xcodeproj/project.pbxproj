@@ -56,13 +56,13 @@
 		7CACA4EC2646E36200810D9E /* FavouritesBook */ = {
 			isa = PBXGroup;
 			children = (
-				7CACA4ED2646E36200810D9E /* FavouritesBookApp.swift */,
+				7C079D8E26495AB100F19303 /* FavouriteModel.swift */,
 				7CACA4EF2646E36200810D9E /* FavouriteContentListView.swift */,
+				7C69440F2659281700719622 /* FavouriteContentDetailsView.swift */,
+				7CACA4ED2646E36200810D9E /* FavouritesBookApp.swift */,
 				7CACA4F12646E36400810D9E /* Assets.xcassets */,
 				7CACA4F62646E36400810D9E /* Info.plist */,
 				7CACA4F32646E36400810D9E /* Preview Content */,
-				7C079D8E26495AB100F19303 /* FavouriteModel.swift */,
-				7C69440F2659281700719622 /* FavouriteContentDetailsView.swift */,
 			);
 			path = FavouritesBook;
 			sourceTree = "<group>";

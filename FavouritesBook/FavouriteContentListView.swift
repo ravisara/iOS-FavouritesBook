@@ -18,10 +18,12 @@ struct FavouriteContentListView: View {
                         Section(header: Text(favouriteModel.title)) {
                             ForEach(favouriteModel.elements) {anElement in
                                 NavigationLink(
-                                    destination: FavouriteContentDetailsView(),
+                                    destination: FavouriteContentDetailsView(chosenFavouriteItem: anElement),
                                     label: {
                                         Text(anElement.name)
                                     })
+                                
+                            
                             }
                         }
                     }

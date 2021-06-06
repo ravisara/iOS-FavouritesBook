@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct FavouriteContentDetailsView: View {
+    
+    var chosenFavouriteItem: FavouriteItemRelatedData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(chosenFavouriteItem.imageName).resizable().frame(width: 400, height: 400, alignment: .center)
+            Text(chosenFavouriteItem.description)
+        }
     }
 }
 
 struct FavouriteContentDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FavouriteContentDetailsView()
+        FavouriteContentDetailsView(chosenFavouriteItem: FavouriteItemRelatedData(name: "test", description: "test", imageName: "BeachWithBoat"))
     }
 }
