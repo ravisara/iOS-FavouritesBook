@@ -13,14 +13,17 @@ struct FavouriteContentDetailsView: View {
     
     var body: some View {
         VStack {
-            Image(chosenFavouriteItem.imageName).resizable().frame(width: 400, height: 400, alignment: .center)
-            Text(chosenFavouriteItem.description)
+            Image(chosenFavouriteItem.imageName).resizable().aspectRatio(contentMode: .fit).padding()
+            Text(chosenFavouriteItem.name).font(.largeTitle).padding()
+            Text(chosenFavouriteItem.description).padding()
         }
     }
 }
 
 struct FavouriteContentDetailsView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        FavouriteContentDetailsView(chosenFavouriteItem: FavouriteItemRelatedData(name: "test", description: "test", imageName: "BeachWithBoat"))
+        FavouriteContentDetailsView(chosenFavouriteItem: sunElement3)
     }
+    
 }

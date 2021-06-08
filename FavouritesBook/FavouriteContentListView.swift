@@ -12,7 +12,6 @@ struct FavouriteContentListView: View {
     var body: some View {
         
         NavigationView {
-            VStack {
                 List {
                     ForEach(favouritesCollection) { favouriteModel in
                         Section(header: Text(favouriteModel.title)) {
@@ -28,9 +27,6 @@ struct FavouriteContentListView: View {
                         }
                     }
                 }.navigationBarTitle(Text("Favourites List"))
-                
-            }
-            
         }
         
     }
